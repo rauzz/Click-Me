@@ -1,0 +1,13 @@
+{
+	"name": "click-me",
+	"version": "1.0.0",
+	"description": "Simple web game where you have to click a button",
+	"main": "index.js",
+   "git repository": "https://github.com/rauzz/Click-Me.git",
+	"scripts": {
+      "compile": "tsc --watch"
+   },
+	"author": "rauzz",
+	"license": "MIT"
+}
+   
