@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$colorMain: #8000ff;
+$colorGray: #838282;
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	font-family: "Montserrat", "Arial", sans-serif;
+	font-weight: 400;
+   background: rgb(29,29,29);
+   background: linear-gradient(0deg, rgba(29,29,29,1) 0%, rgba(60,60,60,1) 100%);
+   
+   body {
+      min-height: 100vh;
+      
+      .max1200 {
+         max-width: 1200px;
+         margin: auto;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         
+         header {
+            text-align: center;
+            margin: 5rem auto 3rem auto;
+            
+            h1 {
+               color: #f3f3f3;
+               font-weight: 900;
+               font-size: 3rem;
+            }
+         }
+         
+         .box {
+            background: rgb(36, 36, 36);
+            position: relative;
+            margin: auto;
+            margin-bottom: 2rem;
+            width: 800px;
+            height: 800px;
+            outline: 4px solid rgb(97, 0, 172);
+            border-radius: 1rem;
+            
+            .button {
+               position: absolute;
+               display: inline-block;
+               background-color: $colorMain;
+               color: white;
+               padding: 2rem;
+               width: 150px;
+               height: 60px;
+               font-size: 1.4rem;
+               text-align: center;
+               font-weight: 500;
+               border-radius: .6rem;
+               transition: 50ms linear;
+               cursor: pointer;
+
+               &:hover {
+                  background-color: rgb(102, 0, 218);
+               }
+            }
+         }
+   
+         footer {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+   
+            a {
+               
+               i{
+                  color: $colorGray;
+                  font-size: 3rem;
+                  transition: .2s;
+
+                  &:hover {
+                     color: #cecece;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
