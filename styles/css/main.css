@@ -52,6 +52,8 @@ html body .max1200 .box {
 }
 html body .max1200 .box .button {
   position: absolute;
+  top: 370px;
+  left: 325px;
   display: inline-block;
   background-color: #8000ff;
   color: white;
@@ -62,8 +64,8 @@ html body .max1200 .box .button {
   text-align: center;
   font-weight: 500;
   border-radius: 0.6rem;
-  -webkit-transition: 50ms linear;
-  transition: 50ms linear;
+  -webkit-transition: 35ms ease-in-out;
+  transition: 35ms ease-in-out;
   cursor: pointer;
 }
 html body .max1200 .box .button:hover {

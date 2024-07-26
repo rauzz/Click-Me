@@ -49,6 +49,8 @@ html {
             
             .button {
                position: absolute;
+               top: 370px;
+               left: 325px;
                display: inline-block;
                background-color: $colorMain;
                color: white;
@@ -59,7 +61,7 @@ html {
                text-align: center;
                font-weight: 500;
                border-radius: .6rem;
-               transition: 50ms linear;
+               transition: 35ms ease-in-out;
                cursor: pointer;
 
                &:hover {
