@@ -64,8 +64,8 @@ html body .max1200 .box .button {
   text-align: center;
   font-weight: 500;
   border-radius: 0.6rem;
-  -webkit-transition: 35ms ease-in-out;
-  transition: 35ms ease-in-out;
+  -webkit-transition: 40ms ease-in-out;
+  transition: 40ms ease-in-out;
   cursor: pointer;
 }
 html body .max1200 .box .button:hover {
