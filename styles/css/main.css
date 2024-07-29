@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  background: rgb(29, 29, 29);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(29, 29, 29)), to(rgb(60, 60, 60)));
+  background: linear-gradient(0deg, rgb(29, 29, 29) 0%, rgb(60, 60, 60) 100%);
+}
+html body {
+  min-height: 100vh;
+}
+html body .max1200 {
+  max-width: 1200px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .max1200 header {
+  text-align: center;
+  margin: 5rem auto 3rem auto;
+}
+html body .max1200 header h1 {
+  color: #f3f3f3;
+  font-weight: 900;
+  font-size: 3rem;
+}
+html body .max1200 .box {
+  background: rgb(36, 36, 36);
+  position: relative;
+  margin: auto;
+  margin-bottom: 2rem;
+  width: 800px;
+  height: 800px;
+  outline: 4px solid rgb(97, 0, 172);
+  border-radius: 1rem;
+}
+html body .max1200 .box .button {
+  position: absolute;
+  top: 370px;
+  left: 325px;
+  display: inline-block;
+  background-color: #8000ff;
+  color: white;
+  padding: 2rem;
+  width: 150px;
+  height: 60px;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 500;
+  border-radius: 0.6rem;
+  -webkit-transition: 40ms ease-in-out;
+  transition: 40ms ease-in-out;
+  cursor: pointer;
+}
+html body .max1200 .box .button:hover {
+  background-color: rgb(102, 0, 218);
+}
+html body .max1200 footer {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .max1200 footer a i {
+  color: #838282;
+  font-size: 3rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+html body .max1200 footer a i:hover {
+  color: #cecece;
+}/*# sourceMappingURL=main.css.map */
