@@ -1,23 +1,33 @@
 import { phrases } from "./strings.js";
 
-const btn: HTMLElement = document.querySelector(".button");
+const btn: HTMLElement = document.querySelector(".button")!;
 
-const moveBtn = function () {
-   
+let lastIndex: number = -1;
+
+function getRandomIndex(max: number): number {
+	let newIndex: number;
+	do {
+		newIndex = Math.floor(Math.random() * max);
+	} while (newIndex === lastIndex);
+	lastIndex = newIndex;
+	return newIndex;
+}
+
+const moveBtn = function (): void {
 	function randomInt(min: number, max: number): number {
-      return Math.floor(Math.random() * (max - min + 1) + min);
+		return Math.floor(Math.random() * (max - min + 1) + min);
 	}
-   
-	const randomX = randomInt(0, 650);
-	const randomY = randomInt(0, 740);
 
-   const posX: number= randomX;
-   const posY: number= randomY;
+	const randomX: number = randomInt(0, 650);
+	const randomY: number = randomInt(0, 740);
+
+	const posX: number = randomX;
+	const posY: number = randomY;
 
 	btn.style.left = posX + "px";
 	btn.style.top = posY + "px";
 
-   btn.innerText = phrases[randomInt(0, 13)];
+	btn.innerText = phrases[getRandomIndex(phrases.length)];
 };
 
 btn.addEventListener("mouseover", moveBtn);
