@@ -91,4 +91,12 @@ html body .max1200 footer a i {
 }
 html body .max1200 footer a i:hover {
   color: #cecece;
+}
+
+::-moz-selection {
+  background: rgba(143, 31, 255, 0.5607843137);
+}
+
+::selection {
+  background: rgba(143, 31, 255, 0.5607843137);
 }/*# sourceMappingURL=main.css.map */
